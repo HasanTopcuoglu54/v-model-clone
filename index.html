@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <input type="text" h-model="name">
+        <button onclick="test()">Set</button>
+    </body>
+    <script>
+        const values = {
+            name: 'merhaba',
+        }
+
+        function test() {
+            values.name = 'Hasan'
+
+            console.log(values)
+            update()
+        }
+    </script>
+    <script src="./h-model.js"></script>
+</html>
